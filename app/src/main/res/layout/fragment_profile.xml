@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_backround2"
+    tools:context=".Fragment.Profile">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_backround2"
+        android:rotation="150"
+        android:layout_marginRight="195dp"
+        android:layout_marginTop="-20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/backround1"
+        android:id="@+id/bg"/>
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:srcCompat="@drawable/ic_back"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F8F7F7"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/backButton"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textColor="#092230"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:id="@+id/tvnama"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Type Here.."
+        android:textColor="#796F6F"
+        android:background="@drawable/textbox"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/tvnama"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/ednama"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#092230"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ednama"
+        android:id="@+id/tvemail"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Type Here.."
+        android:textColor="#796F6F"
+        android:background="@drawable/textbox"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/tvemail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/edemail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#092230"
+        android:textSize="25sp"
+        android:layout_below="@+id/edemail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvpassword"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Type Here.."
+        android:textColor="#796F6F"
+        android:background="@drawable/textbox"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/tvpassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/edpassword"/>
+    
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:background="@drawable/tombol2"
+        android:layout_below="@id/edpassword"
+        android:layout_marginTop="60dp"
+        android:text="Submit"
+        android:textColor="#F8F7F7"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    
+
+
+
+</RelativeLayout>

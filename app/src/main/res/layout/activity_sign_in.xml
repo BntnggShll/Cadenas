@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/gradient_backround2"
+        tools:context=".menu.SignIn">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_backround2"
+            android:rotation="150"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="-150dp"/>
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <View
+            android:id="@+id/bgellipse"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="-15dp"
+            android:background="@drawable/ellipse" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/backButton"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/label1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_below="@+id/label1"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/label2"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Email"
+            android:textColor="@color/hint"
+            android:background="@drawable/textbox"
+            android:paddingLeft="15dp"
+            android:drawablePadding="25dp"
+            android:layout_below="@+id/label2"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/edemail"
+            android:drawableStart="@drawable/ic_email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Password"
+            android:drawableStart="@drawable/ic_lock"
+            android:textColor="@color/hint"
+            android:background="@drawable/textbox"
+            android:paddingLeft="15dp"
+            android:drawablePadding="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/edemail"
+            android:id="@+id/edpassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#1C6A96"
+            android:layout_below="@+id/edpassword"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvforgot"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvforgot"
+            android:background="@drawable/tombol3"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Sign In"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/colom"
+            android:id="@+id/btnsignin"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/hint"
+            android:layout_below="@+id/btnsignin"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/hint"
+            android:layout_below="@+id/btnsignin"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:layout_below="@+id/btnsignin"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hint"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnsignin"
+            android:background="@drawable/tombol4"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:text="Sign Up"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/biruTuda"
+            android:id="@+id/btnsignup"/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

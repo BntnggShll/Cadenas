@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backround"
+    android:paddingBottom="10dp"
+    tools:context=".menu.Home">
+
+    <View
+        android:layout_width="396dp"
+        android:layout_height="196dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gradient_background" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold|italic"
+        android:text="Cadenas"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <View
+        android:id="@+id/colom"
+        android:layout_width="325dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/colom" />
+
+    <View
+        android:layout_width="298dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"/>
+    <View
+        android:layout_width="298dp"
+        android:layout_height="3dp"
+        android:background="@drawable/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="20sp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="115dp"
+        android:textStyle="bold"
+        android:id="@+id/tvnamacolom"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@gmail.com"
+        android:layout_below="@+id/tvnamacolom"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/tvemailcolom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Pintu Pengguna"
+        android:layout_below="@+id/tvemailcolom"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvjumlahcolom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 Pintu"
+        android:layout_below="@+id/tvjumlahcolom"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/tvtotalcolom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terakhir Login"
+        android:layout_below="@+id/tvtotalcolom"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvterakircolom"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024-05-03 14:30:00"
+        android:layout_below="@id/tvterakircolom"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/tvwaktucolom"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvpintu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvwaktucolom"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="100dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_pintu" />
+    <Button
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombol"
+        android:drawableRight="@drawable/ic_add"
+        android:text="Add Door"
+        android:textColor="#C3BABA"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

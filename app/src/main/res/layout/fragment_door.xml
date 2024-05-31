@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E0EBF1"
+    tools:context=".Fragment.Door">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Door"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#092230"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tvtitle"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/biruTuda"
+            android:padding="15dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_power"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Channg Password"
+        android:textColor="#C3BABA"
+        android:textSize="25sp"
+        android:layout_below="@+id/tvtitle"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnchange"
+        />
+
+</RelativeLayout>
